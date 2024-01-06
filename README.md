@@ -1,23 +1,23 @@
-# Stylus
+## Stylus Custom Styles
 
-This repository serves as a collection of [Stylus](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) files for customizing the appearance of various websites. [Stylus](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) is a browser extension that allows users to apply custom styles to websites, enhancing the visual experience.
+Enhance your browsing experience with this collection of custom styles for various websites, designed for use with the [Stylus browser extension](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne).
 
-## Table of Contents
+### Table of Contents
 
 - [Getting Started](#getting-started)
-- [Stylus List](#stylus-list)
+- [Available Styles](#available-styles)
 - [License](#license)
 
-## Getting Started
+### Getting Started
 
-To use the styles provided in this repository, you need to have the Stylus browser extension installed. You can find Stylus for different browsers:
+To apply these custom styles, ensure you have the Stylus extension installed on your preferred browser:
 
 - [Stylus for Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 - [Stylus for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 
-Once you have Stylus installed, you can install the styles provided in this repository by clicking on the links provided in the [Stylus List](#stylus-list) section.
+After installing Stylus, simply click on the links in the [Available Styles](#available-styles) section to apply the styles to your favorite websites.
 
-## Stylus List
+### Available Styles
 
 <details open>
 <summary>🌈 Hobby</summary>
@@ -26,6 +26,8 @@ Once you have Stylus installed, you can install the styles provided in this repo
 
 </details>
 
-## License
+### License
 
-This project is licensed under the [MIT License](LICENSE), meaning you can use, modify, and distribute the code freely.
+This project is licensed under the [MIT License](LICENSE), allowing you to freely use, modify, and distribute the code.
+
+---
