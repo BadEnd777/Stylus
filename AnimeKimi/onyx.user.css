@@ -1,0 +1,460 @@
+/* ==UserStyle==
+@name         AnimeKimi Onyx
+@namespace    github.com/Onyx-Innovators/Stylus/AnimeKimi
+@homepageURL  https://github.com/Onyx-Innovators/Stylus/tree/main/AnimeKimi
+@version      0.0.1
+@description  AnimeKimi with Onyx theme
+@author       Onyx Innovators
+@updateURL    https://github.com/Onyx-Innovators/Stylus/raw/main/AnimeKimi/onyx.user.css
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("animekimi.com") {
+    /* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+    /* Variables */
+    :root {
+        /* Colors */
+        --accent: rgb(239, 1, 119);
+        --text: rgb(205, 214, 244);
+        --subtext1: rgb(186, 194, 222);
+        --subtext0: rgb(166, 173, 200);
+        --surface: rgb(49, 50, 68);
+        --base: rgb(30, 30, 46);
+        --base-50: rgba(30, 30, 46, 0.8);
+        --mantle: rgb(24, 24, 37);
+        --crust: rgb(17, 17, 27);
+        --border: rgb(17, 17, 27);
+
+        /* Radii */
+        --radii-sm: 0.125rem;
+        --radii-base: 0.25rem;
+        --radii-md: 0.375rem;
+        --radii-lg: 0.5rem;
+        --radii-xl: 0.75rem;
+        --radii-2xl: 1rem;
+        --radii-3xl: 1.5rem;
+        --radii-full: 9999px;
+    }
+
+    /* Base */
+    html,
+    body,
+    #dt_contenedor {
+        background-color: var(--base) !important;
+        background: var(--base) !important;
+        color: var(--text) !important;
+        font-family: 'Prompt', sans-serif !important;
+    }
+
+    /* Placeholder */
+    ::placeholder {
+        color: var(--subtext0);
+    }
+
+    /* All text */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    a,
+    label,
+    input,
+    select,
+    textarea,
+    button,
+    ::before,
+    .text {
+        color: var(--text) !important;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--mantle);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--accent);
+        border-radius: var(--radii-md);
+    }
+
+    /* Disable ads */
+    .module_home_x,
+    #animekimiads1,
+    #animekimiads2,
+    #animekimiads3,
+    #animekimiads4,
+    #animekimiads5 {
+        display: none;
+    }
+
+    /* Disable Facebook */
+    #custom_html-2,
+    #custom_html-4 {
+        display: none;
+    }
+
+    /* Header */
+    #header {
+        background: var(--base-50);
+        border-bottom: 1px solid var(--surface);
+        backdrop-filter: blur(10px);
+        box-shadow: none;
+
+        /* Logo */
+        .logo {
+            background: none;
+        }
+
+        /* Navigation */
+        .head-main-nav ul.main-header li a {
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                color: var(--accent);
+                border-bottom: 2px solid var(--accent);
+            }
+        }
+
+        /* Search */
+        .search form {
+            border-radius: var(--radii-md);
+
+            input[type=text] {
+                background: var(--surface);
+                border: 2px solid transparent;
+                padding: 0 15px;
+                border-radius: var(--radii-md);
+                height: 40px;
+                width: 100%;
+                transition: all 0.2s ease-in-out;
+
+                &:focus {
+                    border: 2px solid var(--accent);
+                }
+            }
+
+            button[type=submit] {
+                background: transparent;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    color: var(--accent);
+                }
+            }
+        }
+    }
+
+    /* Main */
+    .module {
+        background: none;
+        border: none;
+        box-shadow: none;
+
+        /* Content */
+        .content {
+            padding: 0;
+            border-right: none;
+
+            header {
+                padding: 15px 0;
+
+                h1,
+                h2 {
+                    border-color: var(--accent);
+                }
+
+                span a {
+                    background: var(--accent) !important;
+                }
+
+                a.m_trending {
+                    float: none;
+                    font-size: 10px;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    padding: 3px 8px;
+                    border-radius: 3px;
+                    margin-left: 6px;
+                }
+            }
+
+            .items {
+                padding: 0;
+                margin-bottom: 15px;
+                border-bottom: none;
+
+                .item .poster {
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .item .poster {
+                    background: none;
+                    border-radius: var(--radii-md);
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        box-shadow: 0 0 0 2px var(--accent);
+
+                        img {
+                            filter: none;
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        border-radius: var(--radii-md);
+                    }
+
+                    .features-type {
+                        background: var(--accent);
+                    }
+
+                    .features-status {
+                        position: absolute;
+                        color: #FFF;
+                        background: var(--accent);
+                        font-size: 11px;
+                        float: right;
+                        clear: both;
+                        padding: 3px;
+                        left: 4px;
+                        right: auto;
+                        top: 4px;
+                        border-radius: 3px;
+                        white-space: nowrap;
+                        display: block;
+                        margin: 0;
+                        line-height: 1.5;
+                    }
+
+                    a:hover>.see {
+                        background: none;
+                    }
+
+                    h3 {
+                        position: absolute;
+                        bottom: -4px;
+                        left: 0;
+                        width: 100%;
+                        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+                    }
+                }
+            }
+        }
+
+        /* Pagination */
+        .resppages.pagination {
+            display: none;
+        }
+
+        .pagination {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+
+            span,
+            a {
+                margin: 0 4px;
+                text-decoration: none;
+                background: var(--mantle);
+                border-radius: var(--radii-md);
+                transition: all 0.2s ease-in-out;
+                border: 1px solid var(--mantle);
+
+                &:hover {
+                    background: var(--accent);
+                    border: 1px solid var(--accent);
+                }
+            }
+
+            span.current {
+                background: var(--accent);
+                border: 1px solid var(--accent);
+            }
+
+            a.inactive {
+                pointer-events: none;
+                color: var(--subtext1);
+                border: 1px solid var(--mantle);
+            }
+
+            .arrow_pag {
+                cursor: pointer;
+            }
+        }
+
+        /* Sidebar */
+        .sidebar {
+            padding: 15px 20px;
+
+            .dt_mainmeta nav.genres ul li {
+                padding: 0;
+                background: var(--surface);
+                border-radius: var(--radii-md);
+                margin: 0 0 10px 0;
+                padding: 10px 10px;
+                border: none;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    background: var(--accent);
+                }
+            }
+
+
+            .dt_mainmeta nav.releases ul li a {
+                background: var(--surface);
+                border-radius: var(--radii-md);
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    background: var(--accent);
+                }
+            }
+        }
+    }
+
+    /* Footer */
+    footer.main {
+        display: none;
+    }
+
+    /* Single */
+    #single {
+        background: none;
+        border: none;
+        box-shadow: none;
+
+        .content {
+            border-right: none;
+
+            .wp-content {
+                border-bottom: 1px solid var(--surface);
+            }
+
+            #episodes > div.wp-content {
+                border-bottom: none;
+            }
+
+            #seasons .se-c .se-q {
+                background: var(--surface);
+
+                span.se-o {
+                    background: var(--accent);
+                }
+
+                span.se-t {
+                    padding: 14.5px 0;
+                }
+            }
+        }
+
+        .dt_mainmeta nav.genres ul li {
+            padding: 0;
+            background: var(--surface);
+            border-radius: var(--radii-md);
+            margin: 0 0 10px 0;
+            padding: 10px 10px;
+            border: none;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background: var(--accent);
+            }
+        }
+
+        /* Breadcrumb */
+        .dt-breadcrumb {
+            display: none;
+        }
+
+        .sheader {
+            border-bottom: 2px solid var(--surface);
+
+            .poster img {
+                border-radius: var(--radii-md);
+            }
+
+            .starstruck .star-on-png:before {
+                color: var(--accent) !important;
+            }
+
+            .starstruck-rating-wrap {
+                background: var(--surface);
+                color: var(--text) !important;
+            }
+
+            .starstruck-wrap {
+                border-top: 1px solid var(--surface);
+                border-bottom: 1px solid var(--surface);
+
+                .dt_rating_vgs {
+                    background: var(--surface);
+                }
+            }
+
+            .sgeneros a {
+                color: var(--text) !important;
+                border-left: 1px solid var(--surface);
+            }
+        }
+
+        .sbox {
+            display: none;
+            border: none !important;
+        }
+    }
+
+    /* Player */
+    .dooplay_player {
+        border-bottom: none;
+
+        .play {
+            background: transparent;
+        }
+
+        .play.isnd {
+            padding: 0;
+        }
+
+        h2 {
+            background: var(--mantle);
+            border-bottom: 1px solid var(--surface);
+        }
+
+        /* Player Server Options */
+        .options {
+            background: var(--mantle);
+            padding: 0;
+
+            ul {
+                margin: 0;
+
+                li {
+                    border-bottom: 1px solid var(--surface);
+                }
+
+                li.on {
+                    background: var(--surface);
+                }
+            }
+        }
+    }
+}
