@@ -22,7 +22,7 @@ Once you have Stylus installed, you can install the styles provided in this repo
 <details open>
 <summary>🌈 Hobby</summary>
 
-- [AnimeKimi](./AnimeKimi/README.md)
+- [AnimeKimi](https://github.com/Onyx-Innovators/Stylus/tree/main/AnimeKimi)
 
 </details>
 
