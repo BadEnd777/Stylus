@@ -1,4 +1,3 @@
-
 ## Onyx for AnimeKimi
 
 <div align="center">
@@ -7,7 +6,7 @@
 
 </div>
 
-Enhance your AnimeKimi experience with "Onyx for AnimeKimi" – a Stylus user style designed by Onyx Innovators. This custom style provides a unique and visually appealing theme for AnimeKimi's website.
+Enhance your [AnimeKimi](https://animekimi.com/) experience with "Onyx for AnimeKimi" – a Stylus user style designed by Onyx Innovators. This custom style provides a unique and visually appealing theme for AnimeKimi's website.
 
 ### How to Install
 1. Install the Stylus extension for your browser:

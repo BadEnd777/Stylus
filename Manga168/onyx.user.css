@@ -1,0 +1,377 @@
+/* ==UserStyle==
+@name         Manga168 Onyx
+@namespace    github.com/Onyx-Innovators/Stylus/Manga168
+@homepageURL  https://github.com/Onyx-Innovators/Stylus/tree/main/Manga168
+@version      0.0.1
+@description  Manga168 with Onyx theme
+@author       Onyx Innovators
+@updateURL    https://github.com/Onyx-Innovators/Stylus/raw/main/Manga168/onyx.user.css
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("manga168.com") {
+    /* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+    /* Variables */
+    :root {
+        /* Colors */
+        --accent: rgb(239, 1, 119);
+        --text: rgb(205, 214, 244);
+        --subtext1: rgb(186, 194, 222);
+        --subtext0: rgb(166, 173, 200);
+        --surface: rgb(49, 50, 68);
+        --base: rgb(30, 30, 46);
+        --mantle: rgb(24, 24, 37);
+        --border: rgb(17, 17, 27);
+
+        /* Radii */
+        --radii-sm: 0.125rem;
+        --radii-base: 0.25rem;
+        --radii-md: 0.375rem;
+        --radii-lg: 0.5rem;
+        --radii-xl: 0.75rem;
+        --radii-2xl: 1rem;
+        --radii-3xl: 1.5rem;
+        --radii-full: 9999px;
+    }
+
+    /* Base */
+    html, body, #dt_contenedor {
+        background: var(--base) !important;
+        color: var(--text) !important;
+        font-family: 'Prompt', sans-serif !important;
+    }
+
+    /* Placeholder */
+    ::placeholder {
+        color: var(--subtext0);
+    }
+
+    /* All text */
+    h1, h2, h3, h4, h5, h6, p, span, a, label, input, select, textarea, button, ::before {
+        color: var(--text) !important;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--mantle) !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--accent) !important;
+        border-radius: var(--radii-md) !important;
+    }
+
+    /* Disable unnecessary elements */
+    #slider-l, #slider-r, #ads_fox_bottom, .dessert-frame, .socialbutton, #content .postbody > .kln,
+    #sidebar > div.widget_text.section, .bloglist, .releases.blog, #colophon > center {
+        display: none;
+    }
+
+    /* Header */
+    .th {
+        background: var(--base);
+        border-bottom: 1px solid var(--surface);
+
+        .centernav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 2.5rem;
+            }
+
+            /* Search */
+            .searchx #form #s {
+                background: var(--mantle);
+                border: 1px solid var(--border);
+                border-radius: var(--radii-full);
+                color: var(--text);
+                padding: 0.5rem 1rem;
+                margin: 0 1rem;
+                width: 100%;
+                max-width: 20rem;
+                transition: all 0.2s ease-in-out;
+
+                &:focus {
+                    border-color: var(--accent);
+                    box-shadow: 0 0 0 2px var(--accent);
+                    outline: none;
+                }
+            }
+
+            /* Disable Theme Switcher */
+            #thememode {
+                display: none;
+            }
+        }
+    }
+
+    /* Pagination */
+    .centerpaging .swiper-pagination span.swiper-pagination-bullet-active {
+        background: var(--accent) !important;
+    }
+
+    .pagination span.page-numbers.current, .quickfilter .filters .filter.submit button,
+    #sidebar .section .ts-wpop-series-gen .ts-wpop-nav-tabs li.active a,
+    #gallery.owl-loaded .owl-dots .owl-dot.active span,
+    .bs.stylefiv .bsx .chfiv li a:hover {
+        background: var(--accent) !important;
+    }
+
+    /* Genres */
+    .home-genres {
+        background: var(--accent);
+
+        .alman a {
+            background: var(--mantle);
+            padding: 8px 30px;
+            border-radius: 6px;
+        }
+    }
+
+    /* Latest */
+    .bixbox {
+        background: var(--mantle) !important;
+    }
+
+    .hothome .releases {
+        background: var(--accent);
+        padding: 0 15px;
+        border: 0;
+
+        h2 {
+            background: var(--mantle);
+        }
+    }
+
+    .colored {
+        background: var(--accent) !important;
+    }
+
+    .epxs {
+        color: var(--subtext0);
+    }
+
+    .numscore {
+        color: var(--accent) !important;
+    }
+
+    /* Manga List */
+    #content .releases {
+        border-bottom: 2px solid var(--surface);
+
+        a {
+            background: var(--accent);
+            color: var(--text) !important;
+
+            &:hover {
+                background: var(--accent);
+                color: var(--text) !important;
+            }
+        }
+    }
+
+    #content .lightmode #sidebar .section h4, .lightmode .serieslist ul li .ctr,
+    .listupd .utao .uta .luf ul li, .lightmode .bs .bsx:hover .tt,
+    .soralist ul, .lightmode .blogbox .btitle h3, .lightmode .blogbox .btitle h1,
+    .bxcl ul li .lchx a:visited, .listupd .utao .uta .luf ul li a:visited,
+    .lightmode .pagination a:hover, .lightmode a:hover,
+    #sidebar .serieslist ul li .leftseries h2 a:hover, .bs.styletere .epxs,
+    .bxcl ul li .dt a, .lightmode .main-info .info-desc .wd-full .mgen a,
+    .lightmode #sidebar .serieslist ul li .leftseries h2 a:hover,
+    .comment-list .comment-body .reply a, .bxcl ul li .eph-num a:visited,
+    .headpost .allc a, .lightmode .seriestucon .seriestucont .seriestucontr .seriestugenre a,
+    .bs.stylefiv .bsx .chfiv li a {
+        color: var(--accent) !important;
+    }
+
+    .listupd .utao .uta .imgu .new {
+        background: var(--accent);
+    }
+
+    #sidebar .section {
+        background: var(--mantle);
+        margin-top: 20px;
+
+        .ts-wpop-series-gen .ts-wpop-nav-tabs {
+            background: var(--surface);
+
+            li.active a {
+                background: var(--accent) !important;
+                color: var(--text) !important;
+
+                &:hover {
+                    background: var(--accent) !important;
+                    color: var(--text) !important;
+                }
+            }
+        }
+
+        .serieslist ul li .ctr {
+            color: var(--subtext0);
+            border: .5px solid var(--subtext0);
+        }
+
+        .serieslist ul li {
+            border-bottom: 1px solid var(--surface);
+        }
+    }
+
+    /* Footer */
+    #footer {
+        background-color: var(--mantle);
+
+        .footermenu, .footer-az .az-list li a {
+            background: var(--accent) !important;
+        }
+    }
+
+    /* Scroll to top */
+    .scrollToTop {
+        background: var(--accent) !important;
+    }
+
+    /* Manga Page */
+    .bookmark {
+        background: var(--accent) !important;
+
+        &:hover {
+            background: var(--accent) !important;
+        }
+    }
+
+    .seriestucon {
+        background: var(--mantle);
+        box-shadow: 0 2px 3px 0 rgb(0 0 0 / 10%);
+
+        .bixbox, .seriestuhead .lastend .inepcx a {
+            background: var(--surface) !important;
+            box-shadow: none;
+        }
+
+        .seriestucont .seriestucontr .seriestugenre a {
+            background: var(--surface) !important;
+            color: var(--text) !important;
+
+            &:hover {
+                background: var(--surface) !important;
+                color: var(--text) !important;
+            }
+        }
+    }
+
+    #content .seriestere .seriestucontent .seriestucontentr tr td {
+        border-bottom: 1px solid var(--surface) !important;
+        border-right: 1px solid var(--surface) !important;
+        color: var(--text) !important;
+    }
+
+    .seriestu .socialts {
+        display: none;
+    }
+
+    #searchchapter {
+        color: var(--text) !important;
+        background: var(--surface) !important;
+        border: 1px solid var(--surface) !important;
+        border-radius: var(--radii-md) !important;
+
+        &:focus {
+            border-color: var(--accent) !important;
+            box-shadow: 0 0 0 2px var(--accent) !important;
+            outline: none !important;
+        }
+    }
+
+    .bxcl ul li .chbox {
+        border: 1px solid var(--surface) !important;
+
+        &:hover {
+            background: var(--surface) !important;
+        }
+    }
+
+    /* Reader */
+    .chnav .selector select {
+        background: var(--surface);
+        border: 1px solid var(--surface);
+    }
+
+    .chnav .l .nvx:after, .chnav .readingmode:after, .chnav .pagedsel:after {
+        background: none;
+    }
+
+    .readingnav {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .nextprev a {
+        background: var(--accent) !important;
+        color: var(--text) !important;
+        
+        &:hover {
+            background: var(--accent) !important;
+            color: var(--text) !important;
+        }
+    }
+
+    .entry-content.entry-content-single.maincontent .kln {
+        display: none;
+    }
+
+    .readingnav.rnavbot .readingnavbot .readingbar .readingprogress {
+        background: var(--accent);
+    }
+
+    .readingnav.rnavbot .readingnavbot .readingoption .nextprev a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+        border-radius: var(--radii-full);
+    }
+
+    .lista a {
+        background: var(--surface) !important;
+        border-color: var(--surface) !important;
+
+        &:hover {
+            background: var(--accent) !important;
+            border-color: var(--accent) !important;
+        }
+    }
+
+    .quickfilter .filters .filter button, .quickfilter .filters .filter.open button {
+        background: var(--surface);
+        border-color: var(--surface);
+
+        &:hover, &:focus {
+            background: var(--surface) !important;
+            border-color: var(--surface) !important;
+        }
+    }
+
+    .hpage a, .quickfilter .filters .filter.submit button:hover {
+        background: var(--accent) !important;
+        border-color: var(--accent) !important;
+        color: var(--text);
+    }
+
+    .quickfilter .filters .filter ul {
+        background-color: var(--surface);
+        border: var(--surface);
+    }
+
+    .modex a {
+        background: var(--surface) !important;
+    }
+}
