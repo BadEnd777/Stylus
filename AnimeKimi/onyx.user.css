@@ -2,7 +2,7 @@
 @name         AnimeKimi Onyx
 @namespace    github.com/Onyx-Innovators/Stylus/AnimeKimi
 @homepageURL  https://github.com/Onyx-Innovators/Stylus/tree/main/AnimeKimi
-@version      0.0.1
+@version      0.0.2
 @description  AnimeKimi with Onyx theme
 @author       Onyx Innovators
 @updateURL    https://github.com/Onyx-Innovators/Stylus/raw/main/AnimeKimi/onyx.user.css
@@ -42,7 +42,6 @@
     html,
     body,
     #dt_contenedor {
-        background-color: var(--base) !important;
         background: var(--base) !important;
         color: var(--text) !important;
         font-family: 'Prompt', sans-serif !important;
@@ -197,9 +196,6 @@
                 .item .poster {
                     position: relative;
                     overflow: hidden;
-                }
-
-                .item .poster {
                     background: none;
                     border-radius: var(--radii-md);
                     cursor: pointer;
@@ -304,24 +300,14 @@
         .sidebar {
             padding: 15px 20px;
 
-            .dt_mainmeta nav.genres ul li {
+            .dt_mainmeta nav.genres ul li,
+            .dt_mainmeta nav.releases ul li a {
                 padding: 0;
                 background: var(--surface);
                 border-radius: var(--radii-md);
                 margin: 0 0 10px 0;
                 padding: 10px 10px;
                 border: none;
-                transition: all 0.2s ease-in-out;
-
-                &:hover {
-                    background: var(--accent);
-                }
-            }
-
-
-            .dt_mainmeta nav.releases ul li a {
-                background: var(--surface);
-                border-radius: var(--radii-md);
                 transition: all 0.2s ease-in-out;
 
                 &:hover {
@@ -349,7 +335,7 @@
                 border-bottom: 1px solid var(--surface);
             }
 
-            #episodes > div.wp-content {
+            #episodes>div.wp-content {
                 border-bottom: none;
             }
 
