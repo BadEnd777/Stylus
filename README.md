@@ -4,9 +4,11 @@ Enhance your browsing experience with this collection of custom styles for vario
 
 ### Table of Contents
 
-- [Getting Started](#getting-started)
-- [Available Styles](#available-styles)
-- [License](#license)
+- [Stylus Custom Styles](#stylus-custom-styles)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Available Styles](#available-styles)
+  - [License](#license)
 
 ### Getting Started
 
@@ -23,6 +25,7 @@ After installing Stylus, simply click on the links in the [Available Styles](#av
 <summary>🌈 Hobby</summary>
 
 - [AnimeKimi](https://github.com/Onyx-Innovators/Stylus/tree/main/AnimeKimi)
+- [Manga168](https://github.com/Onyx-Innovators/Stylus/tree/main/Manga168)
 
 </details>
 
